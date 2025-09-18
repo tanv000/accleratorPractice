@@ -1,0 +1,41 @@
+CSS Advanced Topics – Exercise 2
+Title: Media Showcase (Responsive Images + Filters/Blend + Shapes/Masking)
+
+Goal:
+Create a media showcase page with a hero banner and gallery.
+Use responsive images (picture/srcset + sizes), CSS object-fit, filters, mix-blend-mode, clip-path/shapes, and a subtle mask/gradient overlay.
+
+Requirements:
+1) Hero Section:
+   - Full-width hero with heading and subtext.
+   - Add a gradient background and a subtle vignette using CSS masking.
+   - Ensure heading uses clamp() for fluid type.
+   - Optional sticky top navigation (position: sticky).
+
+2) Responsive Images:
+   - Use <picture> with multiple sources (e.g., AVIF/WebP/JPEG) for the hero image.
+   - For gallery items, use img with srcset + sizes; ensure object-fit: cover for uniform tiles.
+   - Reserve space using aspect-ratio to prevent layout shift.
+
+3) Visual Effects:
+   - Hover/focus on gallery tiles removes grayscale filter and increases contrast slightly.
+   - Add an overlay label using ::after with absolute positioning.
+   - One tile should be clipped to a polygon (clip-path).
+
+4) Performance & Preferences:
+   - Provide @media (prefers-reduced-motion: reduce) to disable transitions.
+   - Use CSS variables for accent colors and spacing.
+   - Keep filters/blend modest to preserve text legibility.
+
+5) Accessibility:
+   - Descriptive alt text for all images.
+   - Visible focus outlines; ensure color contrast ≥ 4.5:1 for text on hero.
+
+Acceptance Criteria:
+- Hero scales text/images across 360px, 768px, 1024px+ breakpoints.
+- Gallery uses a responsive grid (auto-fit/minmax) with consistent tile sizes.
+- Filters/clip-path/overlay behaviors meet spec; object-fit keeps tiles tidy.
+- All CSS authored by student; HTML remains unchanged.
+
+Deliverables:
+- Edit the provided HTML file (exercise2_media_showcase.html) by filling only the CSS TODOs.

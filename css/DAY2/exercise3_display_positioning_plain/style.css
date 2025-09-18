@@ -1,0 +1,49 @@
+.vertical a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #f0f0f0;
+    margin: 2px 0;
+    width: 50%;
+}
+
+.vertical a:hover{
+    background-color: #ddd;
+}
+.horizontal a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #f0f0f0;
+    margin: 0px 5px ;
+    
+
+}
+
+.inline-horizontal{
+    position: relative;
+    left: 60%;
+    top: -14rem;
+}
+
+.horizontal a:hover {
+  background-color: #ddd;
+}
+
+div.login-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(243, 242, 241);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header{
+    background-color: aqua;
+    padding: 10px;
+    position: relative;
+}

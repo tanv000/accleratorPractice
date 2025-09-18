@@ -1,0 +1,18 @@
+Exercise 2 — Borders & Backgrounds
+
+Goal:
+Create a profile card with border radius, a background image, and a white overlay for text readability.
+
+Assets:
+• assets_user_photo.png — use this image as the background of the card.
+
+Tasks for students (write ONLY CSS, do not change HTML structure):
+1) Style .card with a rounded border (10px radius).
+2) Set the card's background-image to assets_user_photo.png. Ensure the image covers the card.
+3) Create a readable white overlay behind the text using rgba() (e.g., rgba(255,255,255,0.85)).
+   You can use the existing .overlay element to apply the semi-transparent background.
+4) Add any sensible padding/margins via CSS to make the text comfortable to read.
+
+Notes:
+• Use background-position and background-size as needed (e.g., center/cover).
+• Keep all changes in CSS only. Do not alter the HTML elements or their order.

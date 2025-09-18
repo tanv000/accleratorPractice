@@ -1,0 +1,19 @@
+.card{
+
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-image: url(assets_user_photo.png);
+    background-size: cover ;
+    background-position: center;
+    margin: 20px auto;
+}
+
+    
+
+.card .overlay{
+    background-color: rgba(255,255,255,0.85);
+    height: 100% ;
+    padding: 20px;
+    justify-content: center;
+}

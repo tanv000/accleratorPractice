@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website - Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Send us a message</h2>
+    <!-- FORM: Allows user input and submission -->
+    <form action="#" method="post"> <!-- action="#" means no server is connected yet -->
+      <!-- LABEL: Describes each input field -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <!-- INPUT type="text": Single-line text box -->
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <!-- INPUT type="email": Special input that validates email format -->
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+      <!-- TEXTAREA: Multi-line input box -->
+
+      <input type="submit" value="Submit">
+      <!-- SUBMIT button: sends form data -->
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>

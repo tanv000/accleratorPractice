@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #2b6cb0;
+  --primary-hover: #1e4e8c;
+  --secondary-color: #718096;
+  --secondary-hover: #4a5568;
+  --text-color: #2d3748;
+  --bg-color: #f7fafc;
+  --font-size-base: 16px;
+  --font-size-lg: 2rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo { font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+.hero-left h1 { font-size: var(--font-size-lg); margin-bottom: 0.5rem; }
+.hero-left p { margin-bottom: 1.5rem; color: var(--secondary-color); }
+.hero-right img {
+  max-width: 280px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  margin-right: 1rem;
+}
+.btn.primary { background: var(--primary-color); color: white; }
+.btn.primary:hover, .btn.primary:focus { background: var(--primary-hover); }
+.btn.secondary { background: var(--secondary-color); color: white; }
+.btn.secondary:hover, .btn.secondary:focus { background: var(--secondary-hover); }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #e2e8f0;
+}
+.social-links { list-style: none; display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; }
+.social-links a { text-decoration: none; color: var(--primary-color); }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero { flex-direction: column; text-align: center; }
+  .hero-right img { margin-top: 2rem; }
+}

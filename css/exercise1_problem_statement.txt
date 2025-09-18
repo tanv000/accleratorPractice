@@ -1,0 +1,48 @@
+CSS Advanced Topics – Exercise 1
+Title: Responsive Analytics Dashboard (Grid + Flex + Variables + clamp())
+
+Goal:
+Build a responsive analytics dashboard layout using CSS Grid for the page template and Flexbox inside cards.
+Apply CSS Variables for theming, use clamp() for fluid typography, and ensure accessibility, layering, and motion preferences.
+
+Requirements:
+1) Page Template (Grid):
+   - Header (full-width), Sidebar (left), Content area (cards grid).
+   - Desktop (≥ 1024px): Sidebar visible and fixed width; Content forms a responsive grid.
+   - Tablet (≥ 768px and < 1024px): Sidebar collapsible to top row; Content reflows cleanly.
+   - Mobile (< 768px): Sidebar becomes a horizontal menu under the header; Content stacks.
+
+2) Cards (Flex):
+   - Each card contains: title, meta row, body area, and action buttons aligned with Flexbox.
+   - Use gap for spacing (no margins between internal elements).
+   - Hover/focus state: elevate card using transform/box-shadow (respect prefers-reduced-motion).
+
+3) CSS Variables (Custom Properties):
+   - Define tokens in :root for colors (surface, text, accent), spacing scale, border-radius, and z-index layers.
+   - Provide an alternative theme scope (.theme-dark) overriding at least surface and text tokens.
+
+4) Typography & Sizing:
+   - Use clamp() for h1/h2 to scale between sensible min/max font sizes.
+   - Use rem for spacing and type; use % and vw/vh where appropriate.
+
+5) Responsive Grid:
+   - Content cards use Grid with auto-fit and minmax(220px, 1fr); 16px (1rem) gaps.
+   - No horizontal scroll on 360px wide devices.
+
+6) Accessibility & Motion:
+   - Focus-visible styles for interactive elements.
+   - @media (prefers-reduced-motion: reduce) disables transitions/animations.
+
+7) Stacking & Positioning:
+   - Sticky sub-header inside content (position: sticky; top: 64px).
+   - Use z-index tokens to layer sticky elements above cards.
+
+Acceptance Criteria:
+- Layout reflows at 360px, 768px, 1024px+ without overflow.
+- Cards align content with Flexbox; grid uses auto-fit/minmax.
+- Theming works by toggling a class on the root container.
+- Lighthouse: no major layout shift from images/text.
+- All CSS authored by student; HTML remains unchanged.
+
+Deliverables:
+- Edit the provided HTML file (exercise1_dashboard.html) by filling only the CSS TODOs.

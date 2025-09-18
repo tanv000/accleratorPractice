@@ -1,0 +1,16 @@
+Exercise 1 — Box Model Playground
+
+Goal:
+Create a simple page that demonstrates the CSS Box Model.
+
+Tasks for students (write ONLY CSS, do not change HTML structure):
+1) Target the element with class 'box' and set:
+   - padding: 20px
+   - border: 3px solid blue
+   - margin: 30px
+   - background: lightyellow
+
+Notes:
+• You may use an internal <style> block in the <head> or a separate CSS file.
+• Do not modify the HTML content — only add styles.
+• Open box.html in a browser to test your styles.

@@ -1,0 +1,15 @@
+Exercise 3 — Display & Positioning
+
+Goal:
+Practice display modes (block, inline, inline-block) and basic positioning.
+
+Tasks for students (write ONLY CSS, do not change HTML structure):
+1) Convert the <a> links inside .vertical into vertical menu items by making them block-level.
+2) Convert the <a> links inside .horizontal into horizontal menu items using inline-block.
+3) Place the element with class 'login-btn' at the top-right corner of the header using absolute positioning.
+4) Add spacing and hover states via CSS for better usability (optional).
+
+Notes:
+• Do not modify the HTML content or order.
+• Use only CSS to achieve the required behaviors.
+• If needed, you can give header a relative position so .login-btn can be placed against it.
