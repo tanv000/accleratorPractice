@@ -6,6 +6,22 @@ let items = []; // array of { name, price }
 // Validate non-empty name and positive numeric price; push {name, price} to items.
 const addItem = function (name, price) {
   // TODO
+  if(typeof name !== 'string' || name.trim() === "")
+  {
+    alert("Invalid name. Enter non-empty string");
+    return;
+  }
+
+  const parsePrice = parseFloat(price)
+  if(isNaN(parsePrice) || parsePrice < 0)
+  {
+    alert("Invalid price. Enter a positive number");
+    return;
+  }
+
+  items.push({name: name.trim(), price: parsePrice})
+  alert(`Added item: ${name.trim()} (₹${parsePrice.toFixed(2)})`);
+  return;
 };
 
 const calcSubtotal = function () {
@@ -16,6 +32,8 @@ const calcSubtotal = function () {
 // If total > 500, apply 10% discount; else return total unchanged.
 const applyDiscount = (total) => {
   // TODO
+  return total > 500 ? total - total * 0.1 : total;
+
 };
 
 function checkout() {
