@@ -4,6 +4,37 @@
 // Return "A".."F" (or "Invalid") using switch(true) or if/else ranges.
 function getLetterGrade(score) {
   // TODO
+  // if(score >= 90)
+  // {
+  //   return "A";
+  // }
+  // else if(score >= 80)
+  // {
+  //   return "B";
+  // }
+
+  // else if(score >= 70)
+  // {
+  //   return "C"
+  // }
+
+  // else if(score >= 60)
+  // {
+  //   return "D";
+  // }
+
+  // else{
+  //   return "F"
+  // }
+
+  switch(true){
+    case score >= 90: return "A";
+    case score >= 80: return "B";
+    case score >= 70: return "C";
+    case score >= 60: return "D";
+    default: return "F";
+  }
+
 }
 
 function collectScores() {
@@ -26,6 +57,15 @@ function collectScores() {
 // Return NaN for empty array.
 const computeAverage = (scores) => {
   // TODO
+  if(scores.length === 0)
+  {
+    return NaN;
+  }
+  let avg = 0;
+  for(let i = 0; i < scores.length; i++){
+    avg += scores[i];
+  }
+  return avg/scores.length;
 };
 
 function showResults(scores) {
