@@ -10,7 +10,7 @@
 
 import java.util.*;
 
-public class prob2 {
+public class day1_prob2 {
 
     public static int[] findMinMax(int start, int end, int[] a, int[] res)
     {

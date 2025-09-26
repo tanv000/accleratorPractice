@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class prob3 {
+public class day1_prob3 {
 
     public static boolean isPalin(int start, int end, String str)
     {

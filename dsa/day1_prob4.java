@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class prob4 {
+public class day1_prob4 {
 
     public static int findInd(int[] arr, int x)
     {

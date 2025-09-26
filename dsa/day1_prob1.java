@@ -6,7 +6,7 @@
  */
 
 import java.util.*;
-public class prob1
+public class day1_prob1
 {
     public static int[] reverseArray(int start, int end, int[] a)
     {
